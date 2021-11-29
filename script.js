@@ -1,7 +1,7 @@
 const submitField = document.getElementById("taskToDo");
 const taskBox = document.getElementById("task");
 const listItemsCSS = document.getElementById("list");
-let input = document.getElementById("task").value;
+//let input = document.getElementById("task").value;
 /**
 function taskButton() {
   if (taskBox && taskBox.value) {
@@ -15,5 +15,10 @@ function taskButton() {
 
 submitField.addEventListener("click", function (e) {
   e.preventDefault();
-  alert("Yeah mann funktionier!" + e.input);
+  //checkVal(taskBox);
+  alert("Yeah mann funktionier! " + taskBox[e.target.value]);
 });
+
+function checkVal(input) {
+  alert("Dere: " + input["task"].value);
+}
