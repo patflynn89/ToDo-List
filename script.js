@@ -1,28 +1,17 @@
 const submitField = document.getElementById("taskToDo");
-//let taskBox = document.getElementById("task").value;
-//let taskBox = document.getElementsByTagName("input");
-let taskBox = document.querySelector('input')[0];
 const listItemsCSS = document.getElementById("list");
-//let input = document.getElementById("task").value;
-taskBox.addEventListener("input", checkVal);
-/**
-function taskButton() {
-  if (taskBox && taskBox.value) {
-    //alert(taskBox);
-    listItemsCSS.style.display = "";
- 
-  }
- 
-}
- */
 
-submitField.addEventListener("click", input); //{
-  //e.preventDefault();
-  //checkVal(taskBox);
+submitField.addEventListener("click", function (e) {
+  e.preventDefault();
+  const taskBox = document.forms[0].task.value;
+  const node = document.createElement("li");
+  const textNode = document.createTextNode(taskBox);
   //alert("Yeah mann funktionier! " + taskBox);
-//});
+  node.appendChild(textNode);
+  listItemsCSS.appendChild(node);
+  clearBox();
+});
 
-function checkVal(input) {
-  input.preventDefault();
-  alert("Dere: " + input.target.value);
+function clearBox() {
+  document.forms[0].task.value = "";
 }
