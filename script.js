@@ -1,9 +1,15 @@
 const submitField = document.getElementById("taskToDo");
 const listItemsCSS = document.getElementById("list");
 
+/* document.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const newTask = document.querySelector(".task");
+
+}) */
+
 submitField.addEventListener("click", function (e) {
   e.preventDefault();
-  const taskBox = document.forms[0].task.value;
+  const taskBox = document.getElementById("taskForm").elements["task"].value;
   const node = document.createElement("li");
   const textNode = document.createTextNode(taskBox);
   //alert("Yeah mann funktionier! " + taskBox);
@@ -13,5 +19,5 @@ submitField.addEventListener("click", function (e) {
 });
 
 function clearBox() {
-  document.forms[0].task.value = "";
+  document.getElementById("taskForm").elements["task"].value = "";
 }

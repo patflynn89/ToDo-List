@@ -6,7 +6,7 @@ h1 {
   text-align: center;
 }
 
-.task {
+#taskForm {
   text-align: center;
   /**background-color: green;*/
 }
