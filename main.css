@@ -11,10 +11,23 @@ h1 {
   /**background-color: green;*/
 }
 
-ul {
-  text-align: center;
+#fields {
+background-color: darkblue;
+text-align: center;
+display: flex;
+flex-direction: column;
+margin: 1rem auto;
+  
 }
 
-li {
-  list-style-type: none;
+#boxes {
+  margin: 0.5em auto;
+}
+
+#taskToDo {
+  margin-right: 2em;
+}
+
+#buttonBox {
+  margin-right: 0.2em;
 }
