@@ -2,14 +2,32 @@
   background-color: brown;
 }
 
-h1 {
+body {
+  text-align: center;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#wrapper {
+  width: 450px;
+  background-color: #000365;
+  margin-top: 5%;
+  margin-left: 30%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-right: 2%;
+  border-radius: 25px;
+}
+
+/* h1 {
   text-align: center;
 }
 
 #taskForm {
   text-align: center;
-  /**background-color: green;*/
-}
+} 
+*/
 
 #fields {
 background-color: darkblue;

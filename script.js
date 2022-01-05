@@ -9,7 +9,7 @@ const fields = document.getElementById("fields");
 
 submitField.addEventListener("click", function (e) {
   e.preventDefault();
-  const taskBox = document.getElementById("taskForm").elements["task"].value;
+  const taskBox = document.getElementById("task_wrapper").elements["task"].value;
   const div = document.createElement("div");
   const node = document.createElement("label");
   const textNode = document.createTextNode(taskBox);
